@@ -11,7 +11,8 @@ import { Chart, ChartModule} from 'angular-highcharts';
 export class SalesByMonthComponent {
   chart = new Chart({
     chart: {
-      type: 'line'
+      type: 'line',
+      height: 325
     },
     title: {
       text: 'Month wise sales'

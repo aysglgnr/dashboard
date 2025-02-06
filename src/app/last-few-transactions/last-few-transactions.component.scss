@@ -1,64 +1,64 @@
 .transactions {
-    .transaction-wrapper {
-      overflow: auto;
-      height: 185px;
+  .transaction-wrapper {
+    overflow: auto;
+    height: 185px;
+  }
+  .title {
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica,
+      sans-serif;
+font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);
+  }
+  .transaction {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    .image {
+      width: 55px;
+      img {
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+      }
     }
     .title {
-      padding: 20px;
-      padding-bottom: 5px;
-      text-align: center;
-      color: #333333;
-      font-size: 18px;
-      font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica,
-        sans-serif;
+      padding: 10px;
+      font-size: 16px;
+      width: 190px;
     }
-    .transaction {
-      display: flex;
-      align-items: center;
-      padding: 5px 20px;
-      border-bottom: 1px solid #f0f0f0;
-      .image {
-        width: 55px;
-        img {
-          width: 45px;
-          height: 45px;
-          object-fit: cover;
-        }
+    .price {
+      padding: 10px;
+      font-size: 16px;
+      width: 90px;
+    }
+    .shop-location {
+      padding: 10px;
+      font-size: 16px;
+      width: 190px;
+      .location {
+        margin-top: 4px;
+        font-size: 14px;
+        color: grey;
       }
-      .title {
-        padding: 10px;
-        font-size: 16px;
-        width: 190px;
+    }
+    .status {
+      padding: 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      &.confirmed {
+        color: #6920fb;
       }
-      .price {
-        padding: 10px;
-        font-size: 16px;
-        width: 90px;
+      &.pending {
+        color: #7e0505;;
       }
-      .shop-location {
-        padding: 10px;
-        font-size: 16px;
-        width: 190px;
-        .location {
-          margin-top: 4px;
-          font-size: 14px;
-          color: grey;
-        }
-      }
-      .status {
-        padding: 10px;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: bold;
-        &.confirmed {
-          color: #6920fb;
-        }
-        &.pending {
-          color: #7e0505;;
-        }
-        &.shipped {
-          color: #044342;
-        }
+      &.shipped {
+        color: #044342;
       }
     }
   }
+}
